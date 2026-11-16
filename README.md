@@ -1,6 +1,8 @@
 # Blurify for One UI
 
-Panel de volumen estilo MIUI (Blurify) para Samsung One UI, con fondo capturado y difuminado, en lugar del panel de volumen de Samsung.
+Fork de [Blurify](https://blurify.houseli.site) convertido en módulo LSPosed: panel de volumen estilo MIUI para Samsung One UI, con fondo capturado y difuminado, en lugar del panel de volumen de Samsung.
+
+La app original funciona **sin root** usando un servicio de accesibilidad. Este fork mantiene la misma UI y sustituye ese mecanismo por un hook en SystemUI, por lo que ahora requiere root + LSPosed.
 
 ## Requisitos
 
@@ -39,8 +41,14 @@ El APK publicado ya lleva el hook dentro. Para recompilarlo:
 3. Sustituye `classes.dex` y `assets/xposed_init` en el APK.
 4. Alinea y firma con `zipalign` + `apksigner`.
 
+## Créditos
+
+- **Blurify original:** [@mituhype](https://www.tiktok.com/@mituhype) en TikTok — [blurify.houseli.site](https://blurify.houseli.site) (código y descargas en [Houssam-2021/Blur](https://github.com/Houssam-2021/Blur)).
+- **Este repo:** solo un fork que adapta la app original (sin root, vía accesibilidad) a un módulo LSPosed. Todo el mérito del diseño y la app es del autor original.
+
 ## Notas
 
 - En algunas compilaciones de One UI el hook de `VolumePanelWindow.show` no existe; el resto de hooks sigue funcionando como respaldo.
 - La captura de fondo usa la API privada `SemWindowManager.screenshot()`, por lo que puede cambiar entre versiones de One UI.
 - APK firmado con clave de desarrollo.
+- Si te gusta Blurify, considera apoyar al desarrollador original: [github.com/sponsors/Houssam-2021](https://github.com/sponsors/Houssam-2021).
