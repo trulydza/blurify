@@ -45,6 +45,7 @@ El APK publicado ya lleva el hook dentro. Para recompilarlo:
 
 - **Blurify original:** [@mituhype](https://www.tiktok.com/@mituhype) en TikTok — [blurify.houseli.site](https://blurify.houseli.site) (código y descargas en [Houssam-2021/Blur](https://github.com/Houssam-2021/Blur)).
 - **Este repo:** solo un fork que adapta la app original (sin root, vía accesibilidad) a un módulo LSPosed. Todo el mérito del diseño y la app es del autor original.
+- **Licencia:** Blurify se distribuye bajo [PolyForm Noncommercial 1.0.0](LICENSE); conserva también el [NOTICE](NOTICE) original. Uso no comercial.
 
 ## Notas
 
